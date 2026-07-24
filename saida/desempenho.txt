@@ -1,0 +1,17 @@
+# comparacao de tempo: versao serial vs versao MPI + OpenMP
+# entrada: entrada/die_1024x1024.txt  malha: 1024x1024  passos: 2000
+# repeticoes por configuracao: 5 (valor reportado = mediana)
+# nucleos disponiveis na maquina: 12
+# tempo do serial usado como base do speedup
+serial 2.4744
+# processos threads tempo_s speedup eficiencia
+1 1 2.3476 1.054 1.054
+1 2 1.6958 1.459 0.730
+2 1 1.3575 1.823 0.911
+1 4 1.8518 1.336 0.334
+2 2 1.0215 2.422 0.606
+4 1 0.7530 3.286 0.822
+1 12 1.9653 1.259 0.105
+2 6 1.0800 2.291 0.191
+4 3 0.6032 4.102 0.342
+12 1 0.7430 3.330 0.278
